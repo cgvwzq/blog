@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>config on Servator</title>
+    <link>https://blog.vwzq.net/tags/config/</link>
+    <description>Recent content in config on Servator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.vwzq.net/tags/config/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://blog.vwzq.net/2020/12/hello-world/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.vwzq.net/2020/12/hello-world/</guid>
+      <description>This is the first entry in this blog. I&amp;rsquo;m still trying to setup and understand Hugo, but since I&amp;rsquo;m here I guess I should share at least some tip.
+I&amp;rsquo;m also setting up the new Macbook Air, and it seems that you need to manually specify whether to run an app with Rosetta (the x86_64 to arm64 translator) or not. As I&amp;rsquo;m going to be using both things, I duplicated the Terminal app, changed its name and icon (I had to do something silly with sips and iconutil), and set one with the option (go to Finder -&amp;gt; Applications -&amp;gt; Utilities, right click and Get Info, and set &amp;ldquo;Open using Rosetta&amp;rdquo;).</description>
+    </item>
+    
+  </channel>
+</rss>
