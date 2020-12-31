@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.vwzq.net/about/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.vwzq.net/tags/config/</loc>
     <lastmod>2020-12-30T00:00:00+00:00</lastmod>
   </url>

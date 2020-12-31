@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.vwzq.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About</title>
+      <link>https://blog.vwzq.net/about/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.vwzq.net/about/</guid>
+      <description>I&amp;rsquo;m Pepe Vila, although on the internets other conscious entities might know me as &amp;ldquo;cgvwzq&amp;rdquo; (or btoa(&#39;pepe&#39;).toLowerCase().slice(0,-2), yup, that&amp;rsquo;s why).
+It is interesting how our brains end up assigning meaning to any random sequence of characters, no matter how alien and unpronounceable it seems at the begining. In fact natural language is just that, a bunch of random sequences of chars (and sounds) that we agree on and that have evolved (and continues doing so) to contain high levels of redundancy.</description>
+    </item>
+    
+    <item>
       <title>Hello World</title>
       <link>https://blog.vwzq.net/2020/12/hello-world/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
