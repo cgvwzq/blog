@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on Servator</title>
+    <link>https://blog.vwzq.net/tags/javascript/</link>
+    <description>Recent content in javascript on Servator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.vwzq.net/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cast me an alert(1)</title>
+      <link>https://blog.vwzq.net/2021/01/cast-me-an-alert/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.vwzq.net/2021/01/cast-me-an-alert/</guid>
+      <description>Welcome to 2021! The future is today, and it is disappointing.
+It is well known that any sane person, from time to time, opens the devtools&#39; console in a browser of his choice to start typing random JavaScript. At least this is what I do, though not as often as I used to.
+The goal is unclear, as most times I do not even think or keep track of what I&amp;rsquo;m trying.</description>
+    </item>
+    
+  </channel>
+</rss>
