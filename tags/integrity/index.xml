@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>integrity on Servator</title>
+    <link>https://blog.vwzq.net/tags/integrity/</link>
+    <description>Recent content in integrity on Servator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.vwzq.net/tags/integrity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computing with codes</title>
+      <link>https://blog.vwzq.net/2021/02/computing-with-codes/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.vwzq.net/2021/02/computing-with-codes/</guid>
+      <description>Recently I spent some time thinking about rowhammer and integrity issues in general. So, when a colleague asked about software-based mitigations to detect errors on faulty hardware, mainly in the context of CPUs in outer space suffering from cosmic rays corruption, it got me thinking.
+I was aware that spaceships usually employ&amp;ndash;very expensive&amp;ndash;hardened CPUs, with special materials, shielding, and redundancy (both spatial, i.e., add resoures, and temporal, i.e., repeat computations). For instance, Perseverance, the recently arrived to Mars rover, runs on a RAD750 PowerPC CPU that costs ~$300,000; or critical systems (like plains or rockets) also tend to duplicate (or triplicate) resources and rely on some majority vote mechanism.</description>
+    </item>
+    
+  </channel>
+</rss>

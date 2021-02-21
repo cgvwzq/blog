@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Computing with codes</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: black;
+        --border-width:  0 ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://blog.vwzq.net/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/javascript.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/c.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/armasm.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.79.1" />
+        
+
+        
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-63G1JQQ06M"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments)};
+              gtag('js', new Date());
+              gtag('config', 'G-63G1JQQ06M');
+            </script>
+        
+
+        
+            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Computing with codes</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/about/">About</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:pvtolkien@gmail.com"><i class="fa fa-email"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/cgvwzq/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/cgvwzq/"><i class="fa fa-twitter"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Computing with codes</h2>
+        <h5>We can compute over codewords instead of over values, it&#39;s cool, and it gives error detection powers</h5>
+        <h6>February 21, 2021</h6>
+        
+<a href="https://blog.vwzq.net/tags/integrity"><kbd class="item-tag">integrity</kbd></a>
+
+<a href="https://blog.vwzq.net/tags/error-correction"><kbd class="item-tag">error correction</kbd></a>
+
+<a href="https://blog.vwzq.net/tags/computation"><kbd class="item-tag">computation</kbd></a>
+
+
+    </div>
+
+    <div align="start" class="content"><p>Recently I spent some time thinking about rowhammer and integrity issues in general. So, when a colleague asked about software-based mitigations to detect errors on faulty hardware, mainly in the context of CPUs in outer space suffering from cosmic rays corruption, it got me thinking.</p>
+<p>I was aware that spaceships usually employ&ndash;very expensive&ndash;hardened CPUs, with special materials, shielding, and redundancy (both spatial, i.e., add resoures, and temporal, i.e., repeat computations). For instance, Perseverance, the recently arrived to Mars rover, runs on a <a href="https://en.wikipedia.org/wiki/RAD750">RAD750</a> PowerPC CPU that costs ~$300,000; or critical systems (like plains or rockets) also tend to duplicate (or triplicate) resources and rely on some majority vote mechanism.</p>
+<p>Redundancy is easy to implement and quite useful, and there are many interesting <a href="https://twitter.com/cgvwzq/status/1220343338513174528">things</a> that I would love more people to research. But what occurred to me was: what if we translate values into codewords that preserve the semantic of the operations while allowing us to detect errors? 64 bits are a lot of bits for many use cases, and the CPU computes over all of them anyway, modulo optimizations and power consumption savings due to 0s.</p>
+<p>So I got some pen and paper and played a bit with this idea, and at least for addition an subtraction it was easy to come up with a working code: just multiply by a constant. Only values that are multiple of <code>N</code> are valid codewords, any other is an error. We assign the codeword <code>N*x</code> to <code>x</code>, and the original domain of 2^64 values is reduced to 2^64/N. It is easy to see that If the encoding function is <code>E()</code>, then <code>E(a)+E(b) = E(a+b)</code>.</p>
+<p>I immediately found this extremely appealing. What about more complex operators? Multiplication, division, logic operators, signed values, floating point? At this point I started googling for things like &ldquo;computing with error codes&rdquo;, and as you can imagine most of it had already been studied in the 70s. Still, it&rsquo;s always fun to rediscover an idea :)</p>
+<p>My simple code turns out to be the <a href="https://en.wikipedia.org/wiki/AN_codes">AN-code</a>, which is just an example of arithmetic codes (not to confuse with <a href="https://en.wikipedia.org/wiki/Arithmetic_coding">arithmetic coding</a>). For a nice introduction to the topic and more details I recommend this thesis from 2011, <a href="https://d-nb.info/1067189289/34">&ldquo;Hardware Error Detection Using AN-Codes&rdquo;</a>.</p>
+<p>From there I extracted plenty of interesting references. P. Forin proposed in 1989 the error model, which describes all different types of error that can occur in a computation:</p>
+<ul>
+<li>Exchanged operand</li>
+<li>Exchanged operator</li>
+<li>Faulty operation</li>
+<li>Lost update</li>
+<li>Modified operand</li>
+</ul>
+<p>Any type of error can be represented as a combiantion of these.</p>
+<p>They also distinguish between deterministic, probabilistic, and permanent errors, but the only reason why I mention all this is because different types of codes protect (i.e., detect or correct) against different types of errors, and as you can imagine there are tradeoffs to be made. Some codes are more efficient than others, spacewise or in terms of instructions overhead, the later is because operations over codewords might require additional computation. To show you a simple example, let&rsquo;s consider multiplication over our previous code: <code>E(a) * E(b) = N*a * N*b = N^2 * a * b != E(a * b)</code>.</p>
+<p>In order to solve this we can modify the operator <code>*</code> over codewords to further divide the result by <code>N</code>. This modified operators can be implemented in hardware or in software, the compiler can add any extra instructions.</p>
+<p>Even more interesting are the following definitions:</p>
+<ul>
+<li>Systematic: A code where each each codeword is represented by <code>n</code> digits is systematic if there exists a set of <code>k</code> digits (<code>k &lt; n</code>) representing the function value and the remaining <code>n-k</code> representing the check.</li>
+<li>Separate: If the codeword is a tuple of the functional value and its check bits, and the encoded operations computes these in parallel; if both the function value and the check bits are processed together by the same operation the code is non-separate. Separate codes are also systematic.</li>
+</ul>
+<p>I do not want to spoil all the fun, if you like the idea there seems to be a lot of related work, although to be honest I&rsquo;m not sure how much recent. Someone also pointed me to private circuits, or more concretely to <a href="https://www.iacr.org/archive/eurocrypt2006/40040310/40040310.pdf">tamperable circuits</a>, which seem able to provide much stronger guarantees.</p>
+<p>I&rsquo;m specially curious about codes that do not require modifying operators, in fact I was planning to try to throw the problem to an SMT solver. Has anyone done that? I bet the answer is yes. Likewise, modern CPUs have support for SIMD instructions, can that serve to build codes for the full 64-bit values domain? Can we just have a compiler pass for doing that?</p>
+<p>Another type of questions that I haven&rsquo;t pondered much about yet are the potential security use cases. For instance, if the valid codeword for a value (i.e., the remainder) in an AN-code was secret and dynamic, how much harder would explotation be? I know checksums are generally not useful to protect against arbitrary corruption and one needs cryptographic primitives, but who knows. In some way this all reminds me of PAC and MTE.</p>
+<p>Anyway, today I just wanted to share something that a few days ago I had no idea about. Disovering new fields/methods always brings me joy :) I&rsquo;ll probably dig a bit more, mainly to see how far people have gotten. If anyone has more interesting pointers, please share.</p>
+</div>
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted">Powered by Hugo and Minimal © Pepe Vila.</p>
+        </footer>
+
+        
+
+        
+    </body>
+
+</html>
+
