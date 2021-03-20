@@ -6,7 +6,52 @@
     <description>Recent content in Tags on Servator</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.vwzq.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.vwzq.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>browser</title>
+      <link>https://blog.vwzq.net/tags/browser/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.vwzq.net/tags/browser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cache</title>
+      <link>https://blog.vwzq.net/tags/cache/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.vwzq.net/tags/cache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://blog.vwzq.net/tags/javascript/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.vwzq.net/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>side-channels</title>
+      <link>https://blog.vwzq.net/tags/side-channels/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.vwzq.net/tags/side-channels/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spectre</title>
+      <link>https://blog.vwzq.net/tags/spectre/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.vwzq.net/tags/spectre/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>computation</title>
       <link>https://blog.vwzq.net/tags/computation/</link>
@@ -31,15 +76,6 @@
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.vwzq.net/tags/integrity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>javascript</title>
-      <link>https://blog.vwzq.net/tags/javascript/</link>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.vwzq.net/tags/javascript/</guid>
       <description></description>
     </item>
     

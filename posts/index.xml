@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Servator</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.vwzq.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.vwzq.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Side channels in web browsers</title>
+      <link>https://blog.vwzq.net/2021/03/brwoser-side-channes/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.vwzq.net/2021/03/brwoser-side-channes/</guid>
+      <description>I&amp;rsquo;ve been away from web browsers for some time now, but after the recent CSS Prime+Probe, SMASH, and Stephen Röttger&amp;rsquo;s spectre PoC I couldn&amp;rsquo;t help myself and had to spend some time catching up. Kudos to everyone involved! :)
+First, I&amp;rsquo;m super happy to see that my work on replacement policies was justified, both SMASH and the Spectre PoC make super cool use of them, that&amp;rsquo;s something I&amp;rsquo;ve been expecting for some time now, and I&amp;rsquo;m pretty sure we&amp;rsquo;ll see more of these tricks to squeeze caches.</description>
+    </item>
+    
     <item>
       <title>Computing with codes</title>
       <link>https://blog.vwzq.net/2021/02/computing-with-codes/</link>
